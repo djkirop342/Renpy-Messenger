@@ -99,7 +99,7 @@ init -2 :
 
     default chatRoomList = [
         [0, "이름1과 대화 테스트를 진행하겠습니다.", 1, "저는 이름1 입니다.\n대화를 진행하면 이렇게 됩니다."],
-        [0, "이름2와 대화 테스트를 진행하겠습니다.", 1, "저는 이름2 입니다.\n대화를 진행하면 이렇게 됩니다."],
+        [0, "이름2와 대화 테스트를 진행하겠습니다.", 1, "저는 이름2 입니다.\n대화를 진행하면 이렇게 됩니다.", "대화를 진행하면 이렇게 됩니다.2222", "대화를 진행하면 이렇게 됩니다.3333"],
         [0, "이름3과 대화 테스트를 진행하겠습니다.", 1, "저는 이름3 입니다.\n대화를 진행하면 이렇게 됩니다."],
         [],
         [],
@@ -269,9 +269,9 @@ screen chatRoom(c) :
                             spacing 4
                             
                             for i in c.sent :
-                                if i[0] :
+                                if i[0] == 0:
                                     for iii, ii in enumerate(i[1]):
-                                        if iii :
+                                        if iii == 0:
                                             hbox:
                                                 xalign 1.0 spacing 0 
                                                 frame:
@@ -285,7 +285,7 @@ screen chatRoom(c) :
                                                 text ii color "#000" size 20
                                 else :
                                     for iii, ii in enumerate(i[1]):
-                                        if iii :
+                                        if iii == 0 :
                                             hbox:
                                                 xalign 0.0 spacing 0 
                                                 # add c.people[i[0]] yalign 0.0
