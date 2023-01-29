@@ -9,10 +9,8 @@ define e = Character('아이린', color="#c8ffc8")
 
 # 여기에서부터 게임이 시작합니다.
 label start:
-
-    # call screen chatList
-
-    jump phone_example
+    call screen chatList
+    # jump phone_example
 
     e "새로운 렌파이 게임을 만들었군요."
 

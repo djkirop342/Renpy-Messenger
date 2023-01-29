@@ -53,6 +53,8 @@
 
 
 screen phone(c):
+    python :
+        print(c.con)
     modal True
     default last = 100
     # text str(c.typing) align 0.0,0.0
